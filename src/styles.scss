@@ -1,1 +1,9 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 /* You can add global styles to this file, and also import other style files */
+
+
+:root{
+    --wallet-boxShadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+}
