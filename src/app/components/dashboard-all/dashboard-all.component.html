@@ -1,1 +1,248 @@
-<p>dashboard-all works!</p>
+<div class="dashboard w-screen h-screen max-w-full max-h-full bg-white">
+    <div class="dashboard-content w-full h-full flex">
+        <div class="sideBar h-full w-2/12 bg-wallet-sideBar-bg">
+            <div class="h-1/6 w-full px-5 py-4">
+                <img src="../../../assets/images/wallet_logo.svg" class="max-w-full" alt="">
+            </div>
+            <div class="h-5/6 w-full px-5 pt-0 pb-2 -mt-8">
+                <app-side-bar></app-side-bar>
+            </div>
+        </div>
+        <div class="main_half h-full w-10/12">
+            <div class="header_portion w-full h-[8vh] pl-5 pr-8">
+                    <p class=" heading_text ">Hello, Enterprise Wallet Payments Salary Account</p>
+                    <p class="logout">
+                        <svg class="mx-3" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                            <path d="M8.00069 9.56015C7.71394 9.56015 7.42722 9.45066 7.2086 9.23214L0.328959 2.35243C-0.108676 1.9148 -0.108676 1.20525 0.328959 0.767791C0.766416 0.330333 1.47582 0.330333 1.91349 0.767791L8.00069 6.85534L14.0879 0.768003C14.5256 0.330545 15.2349 0.330545 15.6723 0.768003C16.1102 1.20546 16.1102 1.91501 15.6723 2.35265L8.79278 9.23235C8.57405 9.45091 8.28733 9.56015 8.00069 9.56015Z" fill="#011627"/>
+                        </svg>
+
+                        <button class="">
+                            Logout
+                        </button>
+                    </p>
+            </div>
+            <div class="rest_of_main_half ">
+                <div class="w-full h-full mt-10 px-10">
+                    <div class="boxes_container mt-8 w-full h-auto flex gap-6">
+                        <div class="first_box w-4/12 h-40 rounded-md bg-black">
+                            	<div class="first_box__container py-7 px-7 ">
+                                    <p class="uppercase text-white">Your Wallet Balance</p>
+                                    <p class="text-wallet-generalGreen text-4xl mb-3 tracking-wide">N150,000,000.88</p>
+                                    <p class="rounded px-3 items-center w-fit flex bg-[#D5E9FA] text-[#0084F4]">0003480384 Providus Bank <span class="ml-2"><img src="../../../assets/images/exclamation_mark.svg" alt=""></span> </p>
+                                </div>
+                        </div>
+
+                        <div class="second_box w-8/12 h-40 rounded">
+                            <div class="second_box__container py-3 px-5 ">
+                                <div class=" form-group mb-1 w-full flex justify-end">
+                                    <select class="rounded-md" name="" id="">
+                                        <option value="" selected>This week</option>
+                                    </select>
+                                </div>
+                                <div class="w-full flex h-full py-2 justify-around items-center">
+                                    <p class="uppercase flex flex-col">
+                                        <span class="uppercase">Transactions</span>
+                                        <span class="text-4xl">560</span>
+                                    </p>
+                                    <p class="flex flex-col">
+                                        <span class="uppercase ">Amount spent</span>
+                                        <span class="text-4xl">12M</span>
+                
+                                    </p>
+                                    <p class="flex flex-col noPseudoClass"> 
+                                        <span class="uppercase">Amount received</span>
+                                        <span class="text-4xl">34M</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table_container w-full mt-9">
+                       <div class="table_container__heading px-7 py-6 flex justify-between items-center">
+                            <span class="text-wallet-sideBar-bg text-xl">Recent Transactions</span>
+                            <span class="text-[#011627]">View More</span>
+                       </div>
+                       <div class="table_content w-full px-5">
+                        <table class="min-w-full leading-normal">
+                            <thead>
+                                <tr>
+                                    <th
+                                        class="px-3 py-3 border-b-2 border-gray-200  text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                        Date/Time
+                                    </th>
+                                    <th
+                                        class="px-3 py-3 border-b-2 border-gray-200  text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                        Category
+                                    </th>
+                                    <th
+                                        class="px-3 py-3 border-b-2 border-gray-2 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                        Reference
+                                    </th>
+                                    <th
+                                        class="px-3 py-3 border-b-2 border-gray-200  text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                        Narration
+                                    </th>
+                                    <th
+                                        class="px-3 py-3 border-b-2 border-gray-200  text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                        Status
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="px-3 py-3 border-b border-gray-200 bg-white text-sm">
+                                        <div class="flex items-center">
+                                            <div class="flex-shrink-0 w-0 h-10">
+                                               
+                                            </div>
+                                                <div class="ml-1">
+                                                    <p class="text-gray-900 whitespace-no-wrap">
+                                                        24/05/2019, 09:34:34 AM
+                                                    </p>
+                                                </div>
+                                            </div>
+                                    </td>
+                                    <td class="px-3 py-3 border-b border-gray-200 bg-white text-sm">
+                                        <p class="text-gray-900 whitespace-no-wrap">Bank Transfer</p>
+                                    </td>
+                                    <td class="px-3 py-3 border-b border-gray-200 bg-white text-sm">
+                                        <p class="text-gray-900 whitespace-no-wrap">
+                                            W798300
+                                        </p>
+                                    </td>
+                                    <td class="px-3 py-3 border-b border-gray-200 bg-white text-sm">
+                                        <p class="text-gray-900 whitespace-no-wrap">
+                                            Transfer to Seun ELEGBOJA	
+                                        </p>
+                                    </td>
+                                    <td class="px-3 py-3 border-b border-gray-200 bg-white text-sm">
+                                        <span
+                                            class="relative inline-block px-1 py-1 font-semibold text-green-900 leading-tight">
+                                            <span aria-hidden
+                                                class="absolute inset-0 "></span>
+                                        <span class="relative">100,000,000</span>
+                                        </span>
+                                    </td>
+                                </tr>
+                                
+
+                                <tr>
+                                    <td class="px-3 py-3 border-b border-gray-200 bg-white text-sm">
+                                        <div class="flex items-center">
+                                            <div class="flex-shrink-0 w-0 h-10">
+                                               
+                                            </div>
+                                                <div class="ml-1">
+                                                    <p class="text-gray-900 whitespace-no-wrap">
+                                                        24/05/2019, 09:34:34 AM
+                                                    </p>
+                                                </div>
+                                            </div>
+                                    </td>
+                                    <td class="px-3 py-3 border-b border-gray-200 bg-white text-sm">
+                                        <p class="text-gray-900 whitespace-no-wrap">Bank Transfer</p>
+                                    </td>
+                                    <td class="px-3 py-3 border-b border-gray-200 bg-white text-sm">
+                                        <p class="text-gray-900 whitespace-no-wrap">
+                                            W798300
+                                        </p>
+                                    </td>
+                                    <td class="px-3 py-3 border-b border-gray-200 bg-white text-sm">
+                                        <p class="text-gray-900 whitespace-no-wrap">
+                                            Transfer to Seun ELEGBOJA	
+                                        </p>
+                                    </td>
+                                    <td class="px-3 py-3 border-b border-gray-200 bg-white text-sm">
+                                        <span
+                                            class="relative inline-block px-1 py-1 font-semibold text-green-900 leading-tight">
+                                            <span aria-hidden
+                                                class="absolute inset-0 "></span>
+                                        <span class="relative">100,000,000</span>
+                                        </span>
+                                    </td>
+                                </tr>
+                                
+
+                                <tr>
+                                    <td class="px-3 py-3 border-b border-gray-200 bg-white text-sm">
+                                        <div class="flex items-center">
+                                            <div class="flex-shrink-0 w-0 h-10">
+                                               
+                                            </div>
+                                                <div class="ml-1">
+                                                    <p class="text-gray-900 whitespace-no-wrap">
+                                                        24/05/2019, 09:34:34 AM
+                                                    </p>
+                                                </div>
+                                            </div>
+                                    </td>
+                                    <td class="px-3 py-3 border-b border-gray-200 bg-white text-sm">
+                                        <p class="text-gray-900 whitespace-no-wrap">Bank Transfer</p>
+                                    </td>
+                                    <td class="px-3 py-3 border-b border-gray-200 bg-white text-sm">
+                                        <p class="text-gray-900 whitespace-no-wrap">
+                                            W798300
+                                        </p>
+                                    </td>
+                                    <td class="px-3 py-3 border-b border-gray-200 bg-white text-sm">
+                                        <p class="text-gray-900 whitespace-no-wrap">
+                                            Transfer to Seun ELEGBOJA	
+                                        </p>
+                                    </td>
+                                    <td class="px-3 py-3 border-b border-gray-200 bg-white text-sm">
+                                        <span
+                                            class="relative inline-block px-1 py-1 font-semibold text-green-900 leading-tight">
+                                            <span aria-hidden
+                                                class="absolute inset-0 "></span>
+                                        <span class="relative">100,000,000</span>
+                                        </span>
+                                    </td>
+                                </tr>
+                                
+
+                                <tr>
+                                    <td class="px-3 py-3 border-b border-gray-200 bg-white text-sm">
+                                        <div class="flex items-center">
+                                            <div class="flex-shrink-0 w-0 h-10">
+                                               
+                                            </div>
+                                                <div class="ml-1">
+                                                    <p class="text-gray-900 whitespace-no-wrap">
+                                                        24/05/2019, 09:34:34 AM
+                                                    </p>
+                                                </div>
+                                            </div>
+                                    </td>
+                                    <td class="px-3 py-3 border-b border-gray-200 bg-white text-sm">
+                                        <p class="text-gray-900 whitespace-no-wrap">Bank Transfer</p>
+                                    </td>
+                                    <td class="px-3 py-3 border-b border-gray-200 bg-white text-sm">
+                                        <p class="text-gray-900 whitespace-no-wrap">
+                                            W798300
+                                        </p>
+                                    </td>
+                                    <td class="px-3 py-3 border-b border-gray-200 bg-white text-sm">
+                                        <p class="text-gray-900 whitespace-no-wrap">
+                                            Transfer to Seun ELEGBOJA	
+                                        </p>
+                                    </td>
+                                    <td class="px-3 py-3 border-b border-gray-200 bg-white text-sm">
+                                        <span
+                                            class="relative inline-block px-1 py-1 font-semibold text-green-900 leading-tight">
+                                            <span aria-hidden
+                                                class="absolute inset-0 "></span>
+                                        <span class="relative">100,000,000</span>
+                                        </span>
+                                    </td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

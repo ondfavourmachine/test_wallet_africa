@@ -18,7 +18,7 @@ module.exports = {
           "wallet-mainText": "#240C40",
           "wallet-generalGreen": "#00C9B6",
           "wallet-sideBar-bg": "#5C2799",
-
+          "wallet-mutedText": "#716E89;"
         }
       },
     },

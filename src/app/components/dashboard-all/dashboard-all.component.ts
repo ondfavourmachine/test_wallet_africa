@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard-all',
@@ -12,4 +12,7 @@ export class DashboardAllComponent implements OnInit {
   ngOnInit(): void {
   }
 
+ 
+
 }
+

@@ -6,4 +6,256 @@
 
 :root{
     --wallet-boxShadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+    --box-border: 1px solid rgba(0, 0, 0, 0.05);
 }
+
+@font-face {
+    font-family: "Eksell Display Small";
+    src: url("./assets/fonts/EksellDisplay-Small.ttf");
+  }
+@font-face {
+font-family: "Eksell Display Large";
+src: url("./assets/fonts/EksellDisplay-Large.ttf");
+}
+
+
+
+@font-face {
+    font-family: 'IBM Plex Light';
+    src: url('./assets/fonts/IBMPlexSans-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBM Plex Light Italic';
+    src: url('./assets/fonts/IBMPlexSans-LightItalic.ttf');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'IBM Plex Medium';
+    src: url('./assets/fonts/IBMPlexSans-Medium.ttf');
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'IBM Plex SemiBold';
+    src: url('./assets/fonts/IBMPlexSans-SemiBold.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBM Plex SemiBold Italic';
+    src: url('./assets/fonts/IBMPlexSans-SemiBoldItalic.ttf');
+    font-style: italic;
+}
+
+
+
+@font-face {
+    font-family: 'IBM Plex ExtraLight';
+    src: url('./assets/fonts/IBMPlexSans-ExtraLight.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBM Plex ExtraLight Italic';
+    src: url('./assets/fonts/IBMPlexSans-ExtraLightItalic.ttf');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'IBM Plex Bold';
+    src: url('./assets/fonts/IBMPlexSans-Bold.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'IBM Plex Bold Italic';
+    src: url('./assets/fonts/IBMPlexSans-BoldItalic.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: "SF Compact Display Light";
+    font-weight: 300;
+    src: url("./assets/fonts/SF-Compact-Display-Light.otf");
+  }
+  
+
+  @font-face {
+    font-family: "SF Compact Display Medium";
+    font-weight: 500;
+    src: url("./assets/fonts/SF-Compact-Display-Medium.otf");
+  }
+
+
+  .reusable_button{
+    font-size: 1.15rem;
+    font-family: 'IBM Plex Medium';
+    @apply px-6 bg-wallet-generalGreen py-2 ml-2 text-wallet-mainText rounded-sm text-sm;
+}
+
+  .sign_in{
+      @apply w-screen h-screen max-w-full max-h-full bg-wallet-bg-general;
+
+     & .header{
+         @apply h-[12vh] py-7 w-full flex justify-between items-center px-9;
+
+        & .other_stuff{
+
+            & span{
+                font-size: 1.1rem;
+                font-family: 'IBM Plex Medium';
+                @apply text-wallet-mainText font-medium;
+            }
+    
+           
+          }
+     }
+
+      & .body{
+          @apply h-[88vh] flex justify-center items-start pt-12 w-full;
+            & .title{ 
+                @apply  w-full flex flex-col justify-center items-center mb-5 leading-8;
+
+                & p{
+                    font-family: 'Eksell Display Large';
+                    @apply capitalize font-medium text-2xl text-wallet-mainText py-2 mb-3;
+
+                    &.signup{
+                        font-family: 'IBM Plex Medium';
+                    
+                    }
+                }
+
+                & span{
+                    font-family: 'IBM Plex Light';
+                    @apply font-medium text-sm text-wallet-mainText;
+                }
+            }
+
+           & .forms_content{
+               display: grid;
+               grid-template-rows: repeat(3, minmax(25px, 50px));
+               @apply grid-cols-2 place-items-center gap-3 py-3 px-2;
+
+               &.signup{
+                   @apply grid-cols-1 grid-rows-2;
+               }
+
+               & .form-group .form-control{
+                   font-family: 'IBM Plex Medium';
+                   font-size: 0.675rem;
+                   color: #7B7B9F;
+                   @apply  w-full bg-wallet-input-bg h-10 rounded-[5px] border border-[#DFE4F4];
+               }
+           }
+      }
+  }
+
+
+  .dashboard{
+      & .list > *{
+        font-family: 'SF Compact Display Light';
+        line-height: 1.2;
+        font-size: 1rem;
+      }
+
+      & .header_portion{
+          box-shadow: var(--wallet-boxShadow);
+          @apply bg-white flex justify-center items-center;
+
+          & > .heading_text{
+              font-size: 1rem ;
+              @apply text-wallet-sideBar-bg font-medium flex-auto
+          }
+
+          & .logout{
+              @apply flex justify-between items-center;
+
+              & button{
+                font-family: 'IBM Plex Medium';
+                @apply relative mx-3 text-wallet-mainText before:absolute before:w-[1px] before:bg-gray-500 before:h-10 before:rotate-180 before:-top-2 before:-left-[13px];
+              }
+          }
+      }
+
+
+      &  .rest_of_main_half{
+              @apply py-6 px-5 w-full h-[88vh] max-h-full;
+
+           & .boxes_container > *{
+              box-shadow: var(--wallet-boxShadow);
+
+              & .second_box__container p{
+                font-size: .95rem;
+                font-family: 'SF Compact Display Light';
+                font-weight: 300;
+                @apply relative after:absolute after:w-[1px] after:bg-black after:h-full after:rotate-180 after:-top-1 after:-right-16;
+
+                &.noPseudoClass{
+                    @apply after:hidden;
+                }
+              }
+
+             
+           }
+
+           & .table_container{
+            box-shadow: var(--wallet-boxShadow);
+            
+             & .table_container__heading{
+                 font-family: "SF Compact Display Light";
+             }
+             }
+
+           & .heading{
+               font-family: 'SF Compact Display Light';
+               @apply  w-full h-16 text-wallet-mainText text-xl font-medium mb-2;
+           }
+
+           & .tab_container{
+               border: var(--box-border);
+               border-radius: 5px;
+               box-shadow: var(--wallet-boxShadow);
+              @apply h-[63vh] w-full;
+
+               & #tabs li a:not(.selected){
+                   font-family: 'SF Compact Display Light';
+                   @apply text-lg text-wallet-mutedText opacity-50;
+               }
+               & #tabs li a.selected{
+                font-family: 'SF Compact Display Light';
+                @apply text-lg text-wallet-sideBar-bg;
+            }
+
+            & #tab-contents{
+               & .layer{
+                font-family: 'SF Compact Display Light';
+                @apply w-[40%] flex justify-between mb-8;
+
+                & h5{
+                    @apply font-semibold;
+                }
+
+                & p{
+                    @apply font-normal text-[1rem];
+                }
+
+                & button{ 
+                    @apply transition-all capitalize border border-wallet-sideBar-bg py-2 rounded-sm hover:bg-wallet-sideBar-bg hover:text-white;
+                }
+               }
+            }
+           }
+      }
+  }

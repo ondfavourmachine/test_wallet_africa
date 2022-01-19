@@ -7,6 +7,8 @@ import { SignInComponent } from './components/sign-in/sign-in.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { DashboardAllComponent } from './components/dashboard-all/dashboard-all.component';
 import { DashboardSettingsComponent } from './components/dashboard-settings/dashboard-settings.component';
+import { SideBarComponent } from './components/side-bar/side-bar.component';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { DashboardSettingsComponent } from './components/dashboard-settings/dash
     SignInComponent,
     SignUpComponent,
     DashboardAllComponent,
-    DashboardSettingsComponent
+    DashboardSettingsComponent,
+    SideBarComponent,
   ],
   imports: [
     BrowserModule,
